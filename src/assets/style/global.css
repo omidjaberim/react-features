@@ -1,0 +1,243 @@
+@import "./font.css";
+/* @import "./normalize.css"; */
+
+@tailwind base;
+@tailwind components;
+
+@font-face {
+  font-family: "IRANSans";
+  src: url("./../fonts/woff2/IRANSansWeb\(FaNum\).woff2") format("woff2");
+}
+
+body {
+  font-family: "IRANSans" !important;
+}
+
+* {
+  font-family: "IRANSans" !important;
+  scrollbar-width: thin;
+  scrollbar-color: #0d5c75 #a5d1e1;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0d5c75;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #0d5c75;
+  border-radius: 20px;
+  border: 3px solid #a5d1e1;
+}
+
+.Toastify__toast-body {
+  font-family: "IRANSans";
+}
+
+.Toastify__toast--error {
+  padding: 3px;
+  align-items: center;
+  border: 2px solid #e74c3c;
+  border-right-color: #e74c3c;
+  border-right-width: 6px;
+}
+
+.Toastify__toast--success {
+  padding: 3px;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 9px 0px rgba(7, 188, 12, 0.75);
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(7, 188, 12, 0.75);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(7, 188, 12, 0.75);
+}
+
+.Toastify__toast--info {
+  padding: 3px;
+  align-items: center;
+  border: 2px solid #3498db;
+  border-right-color: #3498db;
+  border-right-width: 6px;
+}
+
+.Toastify__toast--warning {
+  padding: 3px;
+  align-items: center;
+  border: 2px solid #f1c40f;
+  border-right-color: #f1c40f;
+  border-right-width: 6px;
+}
+
+.Toastify__toast-body {
+  color: #444c63;
+  font-size: 16px;
+  padding-left: 20px;
+  line-height: 20px;
+  padding: 10px;
+  padding-top: 15px;
+  margin-left: 10px !important;
+}
+
+.Toastify__toast > button > svg {
+  margin-top: 25px;
+  margin-right: 5px !important;
+  margin-left: 5px !important;
+}
+
+@layer components {
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .start {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .end {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .row-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .space-around {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .stretch {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .align-stretch {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .align-start {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .align-end {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .align-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .align-baseline {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .content-start {
+    display: flex;
+    align-content: flex-start;
+  }
+
+  .content-stretch {
+    display: flex;
+    align-content: stretch;
+  }
+
+  .content-end {
+    display: flex;
+    align-content: flex-end;
+  }
+
+  .content-space-between {
+    display: flex;
+    align-content: space-between;
+  }
+
+  .content-space-around {
+    display: flex;
+    align-content: space-around;
+  }
+
+  .zero-order {
+    display: flex;
+    order: 0;
+  }
+
+  .zero-grow {
+    display: flex;
+    flex-grow: 0;
+  }
+
+  .zero-shrink {
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  .self-auto {
+    display: flex;
+    align-self: auto;
+  }
+
+  .self-stretch {
+    display: flex;
+    align-self: stretch;
+  }
+
+  .self-start {
+    display: flex;
+    align-self: flex-start;
+  }
+
+  .self-end {
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .self-center {
+    display: flex;
+    align-self: center;
+  }
+
+  .self-baseline {
+    display: flex;
+    align-self: baseline;
+  }
+
+  .revers {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@tailwind utilities;
